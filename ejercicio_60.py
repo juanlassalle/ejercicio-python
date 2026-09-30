@@ -10,4 +10,9 @@ def cargar_lista():
     return palabras
 
 def mostrar_palabras(lista):
-    
+    for elemento in lista:
+        if len(elemento) > 5 :
+            print(elemento)
+
+lista = cargar_lista()
+mostrar_palabras(lista)
